@@ -194,6 +194,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="audio.cpp" />
+    <ClCompile Include="collision.cpp" />
     <ClCompile Include="framebuffer.cpp" />
     <ClCompile Include="fullscreen_quad.cpp" />
     <ClCompile Include="geometric_primitive.cpp" />
@@ -214,6 +215,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="audio.h" />
+    <ClInclude Include="collision.h" />
     <ClInclude Include="framebuffer.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="fullscreen_quad.h" />
