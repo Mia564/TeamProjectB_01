@@ -521,9 +521,9 @@ void SkinnedMesh::create_com_objects(ID3D11Device* device, const char* fbxFilena
         { "WEIGHTS", 0, DXGI_FORMAT_R32G32B32A32_FLOAT, 0, D3D11_APPEND_ALIGNED_ELEMENT },
         { "BONES", 0, DXGI_FORMAT_R32G32B32A32_UINT, 0, D3D11_APPEND_ALIGNED_ELEMENT },
     };
-    create_vs_from_cso(device, "skinned_mesh_vs.cso", vertexShader.ReleaseAndGetAddressOf(),
+    create_vs_from_cso(device, "./Shader/skinned_mesh_vs.cso", vertexShader.ReleaseAndGetAddressOf(),
     inputLayout.ReleaseAndGetAddressOf(), input_element_desc, ARRAYSIZE(input_element_desc));
-    create_ps_from_cso(device, "skinned_mesh_ps.cso", pixelShader.ReleaseAndGetAddressOf());
+    create_ps_from_cso(device, "./Shader/skinned_mesh_ps.cso", pixelShader.ReleaseAndGetAddressOf());
     
      D3D11_BUFFER_DESC buffer_desc{};
     buffer_desc.ByteWidth = sizeof(Constants);
