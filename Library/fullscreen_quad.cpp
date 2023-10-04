@@ -3,9 +3,9 @@
 #include "misc.h"
 
 FullscreenQuad::FullscreenQuad(ID3D11Device* device) {
-    create_vs_from_cso(device, "fullscreen_quad_vs.cso", embeddedVertexShader.ReleaseAndGetAddressOf(),
+    create_vs_from_cso(device, "./Shader/fullscreen_quad_vs.cso", embeddedVertexShader.ReleaseAndGetAddressOf(),
         nullptr, nullptr, 0);
-    create_ps_from_cso(device, "fullscreen_quad_ps.cso", embeddedPixelShader.ReleaseAndGetAddressOf());
+    create_ps_from_cso(device, "./Shader/fullscreen_quad_ps.cso", embeddedPixelShader.ReleaseAndGetAddressOf());
 
     HRESULT hr = S_OK;
     D3D11_BUFFER_DESC bufferDesc = {};

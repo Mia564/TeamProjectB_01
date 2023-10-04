@@ -264,8 +264,8 @@ bool framework::initialize()
 	// fullscreenQuadオブジェクトの生成
 	bitBlockTransfer = std::make_unique<FullscreenQuad>(device.Get());
 
-	create_ps_from_cso(device.Get(), "luminance_extraction_ps.cso", pixelShaders[0].GetAddressOf());
-	create_ps_from_cso(device.Get(), "blur_ps.cso", pixelShaders[1].GetAddressOf());
+	create_ps_from_cso(device.Get(), "./Shader/luminance_extraction_ps.cso", pixelShaders[0].GetAddressOf());
+	create_ps_from_cso(device.Get(), "./Shader/blur_ps.cso", pixelShaders[1].GetAddressOf());
 
 	hr = XAudio2Create(xaudio2.GetAddressOf(), 0, XAUDIO2_DEFAULT_PROCESSOR);
 	_ASSERT_EXPR(SUCCEEDED(hr), hr_trace(hr));

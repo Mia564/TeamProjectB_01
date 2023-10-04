@@ -30,7 +30,7 @@ Sprite::Sprite(ID3D11Device* device, const wchar_t* filename) {
     _ASSERT_EXPR(SUCCEEDED(hr), hr_trace(hr));
 
     // 頂点シェーダーオブジェクトの生成
-    const char* csoName = "sprite_vs.cso";
+    const char* csoName = "./Shader/sprite_vs.cso";
 
     // 入力レイアウトオブジェクトの生成
     D3D11_INPUT_ELEMENT_DESC inputElementDesc[]{
@@ -45,7 +45,7 @@ Sprite::Sprite(ID3D11Device* device, const wchar_t* filename) {
     create_vs_from_cso(device, csoName, vertexShader.GetAddressOf(), inputLayout.GetAddressOf(), inputElementDesc, _countof(inputElementDesc));
 
     // ピクセルシェーダーオブジェクトの生成
-    csoName = "sprite_ps.cso";
+    csoName = "./Shader/sprite_ps.cso";
 
     create_ps_from_cso(device, csoName, pixelShader.GetAddressOf());
 

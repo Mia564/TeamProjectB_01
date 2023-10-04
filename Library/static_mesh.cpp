@@ -185,11 +185,11 @@ StaticMesh::StaticMesh(ID3D11Device* device, const wchar_t* objFilename, bool on
         { "TEXCOORD", 0, DXGI_FORMAT_R32G32_FLOAT, 0, D3D11_APPEND_ALIGNED_ELEMENT, D3D11_INPUT_PER_VERTEX_DATA, 0 }
     };
 
-    const char* fileName = "static_mesh_vs.cso";
+    const char* fileName = "./Shader/static_mesh_vs.cso";
 
     create_vs_from_cso(device,fileName, vertexShader.GetAddressOf(), inputLayout.GetAddressOf(),inputElementDesc,ARRAYSIZE(inputElementDesc));
 
-    fileName = "static_mesh_ps.cso";
+    fileName = "./Shader/static_mesh_ps.cso";
 
     create_ps_from_cso(device, fileName, pixelShader.GetAddressOf());
 
