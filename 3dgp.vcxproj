@@ -130,9 +130,9 @@
     </Link>
     <FxCompile>
       <ShaderModel>5.0</ShaderModel>
-      <ObjectFileOutput>%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput>HLSL\%(Filename).cso</ObjectFileOutput>
       <AssemblerOutput>AssemblyCode</AssemblerOutput>
-      <AssemblerOutputFile>%(Filename).cod</AssemblerOutputFile>
+      <AssemblerOutputFile>HLSL\%(Filename).cod</AssemblerOutputFile>
     </FxCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -187,9 +187,9 @@
     </Link>
     <FxCompile>
       <ShaderModel>5.0</ShaderModel>
-      <ObjectFileOutput>%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput>HLSL\%(Filename).cso</ObjectFileOutput>
       <AssemblerOutput>AssemblyCode</AssemblerOutput>
-      <AssemblerOutputFile>%(Filename).cod</AssemblerOutputFile>
+      <AssemblerOutputFile>HLSL\%(Filename).cod</AssemblerOutputFile>
     </FxCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
