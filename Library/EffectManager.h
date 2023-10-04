@@ -18,11 +18,11 @@ public:
     
     void Initialize();
 
-    void Finalize();
+    void Finalize() {}
     
-    void Update(float elapsedTiem);
+    void Update(float elapsedTiem) {}
 
-    void Render(const DirectX::XMFLOAT4X4& view, const DirectX::XMFLOAT4X4& projection);
+    void Render(const DirectX::XMFLOAT4X4& view, const DirectX::XMFLOAT4X4& projection) {}
 
     Effekseer::ManagerRef GetEffekseerManager() { return effekseerManager; }
 
