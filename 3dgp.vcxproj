@@ -91,7 +91,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>USE_IMGUI;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)USE_IMGUI</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(ProjectDir)DirectXTK-main;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\DirectXTK-main\Inc;.\cereal-master\include;.\Effekseer170b\include\Effekseer;.\Effekseer170b\include\EffekseerRendererDX11;.\imgui;$(ProjectDir)DirectXTK-main;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -102,7 +102,7 @@
       </IgnoreSpecificDefaultLibraries>
       <IgnoreAllDefaultLibraries>
       </IgnoreAllDefaultLibraries>
-      <AdditionalLibraryDirectories>C:\Users\2220262\OneDrive - yamaguchigakuen\デスクトップ\描画エンジン\x3dgp.01\DirectXTK-main\Bin\Desktop_2019\x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>.\Effekseer170b\lib\vs2019\MT\$(PlatformTarget)\$(Configuration);..\TeamProjectB_01\DirectXTK-main\Bin\Desktop_2019\x64\Debug;C:\Users\2220262\OneDrive - yamaguchigakuen\デスクトップ\描画エンジン\x3dgp.01\DirectXTK-main\Bin\Desktop_2019\x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <FxCompile>
       <ShaderModel>5.0</ShaderModel>
@@ -119,13 +119,13 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)USE_IMGUI</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Users\2220262\Desktop\チーム制作用描画エンジン\x3dgp.00\DirectXTK-main\Inc;C:\Program Files\Autodesk\FBX\FBX SDK\2020.3.1\include;C:\Users\2220262\Desktop\チーム制作用描画エンジン\x3dgp.00\cereal-master\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\DirectXTK-main\Inc;.\cereal-master\include;.\Effekseer170b\include\Effekseer;.\Effekseer170b\include\EffekseerRendererDX11;.\imgui;C:\Users\2220262\Desktop\チーム制作用描画エンジン\x3dgp.00\DirectXTK-main\Inc;C:\Program Files\Autodesk\FBX\FBX SDK\2020.3.1\include;C:\Users\2220262\Desktop\チーム制作用描画エンジン\x3dgp.00\cereal-master\include</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Program Files\Autodesk\FBX\FBX SDK\2020.3.1\lib\vs2019\x64\debug;C:\Users\2220262\Desktop\チーム制作用描画エンジン\x3dgp.00\DirectXTK-main\Bin\Desktop_2019\x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>.\Effekseer170b\lib\vs2019\MT\$(PlatformTarget)\$(Configuration);..\TeamProjectB_01\DirectXTK-main\Bin\Desktop_2019\x64\Debug;C:\Program Files\Autodesk\FBX\FBX SDK\2020.3.1\lib\vs2019\x64\debug;C:\Users\2220262\Desktop\チーム制作用描画エンジン\x3dgp.00\DirectXTK-main\Bin\Desktop_2019\x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>d3d11.lib;dxgi.lib;zlib-md.lib;libxml2-md.lib;libfbxsdk-md.lib;DirectXTK.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <FxCompile>
@@ -145,8 +145,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)USE_IMGUI</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>
-      </AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\DirectXTK-main\Inc;.\cereal-master\include;.\Effekseer170b\include\Effekseer;.\Effekseer170b\include\EffekseerRendererDX11;.\imgui;</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -154,8 +153,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>
-      </AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>.\Effekseer170b\lib\vs2019\MT\$(PlatformTarget)\$(Configuration);</AdditionalLibraryDirectories>
       <AdditionalDependencies>d3d11.lib;dxgi.lib;zlib-md.lib;libxml2-md.lib;libfbxsdk-md.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <FxCompile>
@@ -175,14 +173,14 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)USE_IMGUI</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Users\2220262\Desktop\チーム制作用描画エンジン\x3dgp.00\DirectXTK-main\Inc;C:\Program Files\Autodesk\FBX\FBX SDK\2020.3.1\lib\vs2019\x64\release;C:\Users\2220262\Desktop\チーム制作用描画エンジン\x3dgp.00\cereal-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\DirectXTK-main\Inc;.\cereal-master\include;.\Effekseer170b\include\Effekseer;.\Effekseer170b\include\EffekseerRendererDX11;.\imgui;C:\Users\2220262\Desktop\チーム制作用描画エンジン\x3dgp.00\DirectXTK-main\Inc;C:\Program Files\Autodesk\FBX\FBX SDK\2020.3.1\lib\vs2019\x64\release;C:\Users\2220262\Desktop\チーム制作用描画エンジン\x3dgp.00\cereal-master\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\2220262\Desktop\チーム制作用描画エンジン\x3dgp.00\DirectXTK-main\Bin\Desktop_2019\x64\Release;C:\Program Files\Autodesk\FBX\FBX SDK\2020.3.1\lib\vs2019\x64\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>.\Effekseer170b\lib\vs2019\MT\$(PlatformTarget)\$(Configuration);C:\Users\2220262\Desktop\チーム制作用描画エンジン\x3dgp.00\DirectXTK-main\Bin\Desktop_2019\x64\Release;C:\Program Files\Autodesk\FBX\FBX SDK\2020.3.1\lib\vs2019\x64\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>d3d11.lib;dxgi.lib;zlib-md.lib;libxml2-md.lib;libfbxsdk-md.lib;DirectXTK.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <FxCompile>
@@ -194,6 +192,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="audio.cpp" />
+    <ClCompile Include="EffectManager.cpp" />
     <ClCompile Include="framebuffer.cpp" />
     <ClCompile Include="fullscreen_quad.cpp" />
     <ClCompile Include="geometric_primitive.cpp" />
@@ -234,6 +233,7 @@
     <ClInclude Include="sprite_batch.h" />
     <ClInclude Include="static_mesh.h" />
     <ClInclude Include="texture.h" />
+    <ClInclude Include="EffectManager.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="fullscreen_quad.hlsli" />

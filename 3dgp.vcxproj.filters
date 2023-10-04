@@ -76,6 +76,9 @@
     <ClCompile Include="audio.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
+    <ClCompile Include="EffectManager.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -139,6 +142,9 @@
       <Filter>Headers</Filter>
     </ClInclude>
     <ClInclude Include="audio.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectManager.h">
       <Filter>Headers</Filter>
     </ClInclude>
   </ItemGroup>
