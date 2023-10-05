@@ -6,6 +6,7 @@
 #include <wrl.h>
 
 #include "misc.h"
+#include "Mouse.h"
 #include "high_resolution_timer.h"
 #include "framebuffer.h"
 #include "fullscreen_quad.h"

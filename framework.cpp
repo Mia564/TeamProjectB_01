@@ -280,6 +280,7 @@ bool framework::initialize()
 
 void framework::update(float elapsed_time/*Elapsed seconds from last frame*/)
 {
+
 #ifdef USE_IMGUI
 	ImGui_ImplDX11_NewFrame();
 	ImGui_ImplWin32_NewFrame();

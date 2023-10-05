@@ -79,6 +79,9 @@
     <ClCompile Include="collision.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
+    <ClCompile Include="Mouse.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -145,6 +148,9 @@
       <Filter>Headers</Filter>
     </ClInclude>
     <ClInclude Include="collision.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse.h">
       <Filter>Headers</Filter>
     </ClInclude>
   </ItemGroup>
