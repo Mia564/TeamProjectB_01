@@ -45,6 +45,6 @@ public:
 
 protected:
     // ˆÚ“®ˆ—
-    void Move();
+    void Move(float elapsedTime);
     void CoolTime();
 };

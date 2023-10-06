@@ -1,6 +1,6 @@
 #include "Character.h"
 
-void Character::Move() {
+void Character::Move(float elapsedTime) {
 
 }
 
