@@ -99,9 +99,6 @@ public:
 	Microsoft::WRL::ComPtr<ID3D11Buffer> constantBuffers[8];
 	std::unique_ptr<GeometricPrimitive> geometricPrimitives[8];
 
-
-	std::unique_ptr<StaticMesh> staticMeshes[8];
-
 	std::unique_ptr<SkinnedMesh> skinnedMeshes[8];
 
 	std::unique_ptr<Framebuffer> framebuffers[8];

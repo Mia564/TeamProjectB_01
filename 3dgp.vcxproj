@@ -195,6 +195,8 @@
   <ItemGroup>
     <ClCompile Include="GameSource\Character.cpp" />
     <ClCompile Include="GameSource\collision.cpp" />
+    <ClCompile Include="GameSource\SceneManager.cpp" />
+    <ClCompile Include="GameSource\SceneTitle.cpp" />
     <ClCompile Include="imgui\imgui.cpp" />
     <ClCompile Include="imgui\imgui_draw.cpp" />
     <ClCompile Include="imgui\imgui_impl_dx11.cpp" />
@@ -218,6 +220,9 @@
   <ItemGroup>
     <ClInclude Include="GameSource\Character.h" />
     <ClInclude Include="GameSource\collision.h" />
+    <ClInclude Include="GameSource\Scene.h" />
+    <ClInclude Include="GameSource\SceneManager.h" />
+    <ClInclude Include="GameSource\SceneTitle.h" />
     <ClInclude Include="imgui\imconfig.h" />
     <ClInclude Include="imgui\imgui.h" />
     <ClInclude Include="imgui\imgui_impl_dx11.h" />

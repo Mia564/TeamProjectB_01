@@ -88,6 +88,12 @@
     <ClCompile Include="GameSource\Character.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
+    <ClCompile Include="GameSource\SceneManager.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSource\SceneTitle.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Library\audio.h">
@@ -160,6 +166,15 @@
       <Filter>imgui</Filter>
     </ClInclude>
     <ClInclude Include="GameSource\Character.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\Scene.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\SceneManager.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSource\SceneTitle.h">
       <Filter>Headers</Filter>
     </ClInclude>
   </ItemGroup>

@@ -15,8 +15,15 @@ protected:
         0,0,0,1
     };
 
-    DirectX::XMFLOAT3 velocity = { 0,0,0 };
+    float velocity = 0.0f;
     float acceleration = 1.0f;
+
+    int attack = 1;
+    int hp = 0;
+    int maxHp = 5;
+    bool deathFlag = false; // 死亡フラグ
+    bool battleFlag = false; // 戦闘フラグ
+    bool attackRecast = false; // オフなら攻撃可能
 
 public:
     Character(){}
@@ -43,8 +50,34 @@ public:
     // スケール設定
     void SetScale(const DirectX::XMFLOAT3& scale) { this->scale = scale; }
 
+    // HP取得
+    const int GetHP() const { return hp; }
+
+    // HP設定
+    void SetHP(int& hp) { this->hp = hp; }
+
+    // 攻撃力取得
+    const int GetAttack() const { return attack; }
+
+    // 攻撃力設定
+    void SetAttack(int& attack) { this->attack = attack; }
+public:
+    // フラグ設定
+    void FlagOn(bool& flag) { if(flag == false) flag = true; }
+    void FlagOff(bool& flag) { if(flag == true) flag = false; }
+
+    // クールタイム
+    void SetRecastTime(float second,bool& recastFlag,float elapsedTime);
 protected:
+    // キャラの行動ステート
+    virtual void BehaviorState(float elapsedTime);
+
     // 移動処理
-    void Move(float elapsedTime);
-    void CoolTime();
+    virtual void Move(float elapsedTime);
+
+    virtual void Battle(Character& dst); // あとでtemplateに変えるかも(建物にも対応するため)
+
+    virtual void Attack(Character& dst);
+
+    Character Find(Character& src);
 };
