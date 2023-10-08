@@ -94,8 +94,8 @@
     <ClCompile Include="GameSource\SceneTitle.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="Mouse.cpp">
-      <Filter>Sources</Filter>
+    <ClCompile Include="Library\Mouse.cpp">
+      <Filter>Library</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -180,8 +180,8 @@
     <ClInclude Include="GameSource\SceneTitle.h">
       <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="Mouse.h">
-      <Filter>Headers</Filter>
+    <ClInclude Include="Library\Mouse.h">
+      <Filter>Library</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

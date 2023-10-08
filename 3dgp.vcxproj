@@ -210,6 +210,7 @@
     <ClCompile Include="Library\fullscreen_quad.cpp" />
     <ClCompile Include="Library\geometric_primitive.cpp" />
     <ClCompile Include="Library\main.cpp" />
+    <ClCompile Include="Library\Mouse.cpp" />
     <ClCompile Include="Library\shader.cpp" />
     <ClCompile Include="Library\skinned_mesh.cpp" />
     <ClCompile Include="Library\sprite.cpp" />
@@ -239,6 +240,7 @@
     <ClInclude Include="Library\geometric_primitive.h" />
     <ClInclude Include="Library\high_resolution_timer.h" />
     <ClInclude Include="Library\misc.h" />
+    <ClInclude Include="Library\Mouse.h" />
     <ClInclude Include="Library\shader.h" />
     <ClInclude Include="Library\skinned_mesh.h" />
     <ClInclude Include="Library\sprite.h" />
